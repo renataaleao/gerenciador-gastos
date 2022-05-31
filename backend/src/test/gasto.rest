@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/gastos
+
+###
+GET http://localhost:3000/gastos/1
+
+###
+POST http://localhost:3000/gastos
+Content-Type: application/json
+
+{
+    "nome": "Água",
+    "data": "30/05/2022",
+    "valor": 200
+}
+
+###
+PUT http://localhost:3000/gastos/2
+Content-Type: application/json
+
+{
+    "nome": "Internet",
+    "data": "30/05/2022",
+    "valor": 100
+}
+
+###
+DELETE http://localhost:3000/gastos/2
